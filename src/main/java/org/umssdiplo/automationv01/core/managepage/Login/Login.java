@@ -17,7 +17,7 @@ public class Login extends BasePage {
     private WebElement loginBtn;
 
     public void setCredentials() {
-        String username = PropertyAccessor.getInstance().getUser();
+        String username = PropertyAccessor.getInstance().getUserName();
         String password = PropertyAccessor.getInstance().getPassword();
         CommonEvents.setInputField(usernameInputField, username);
         CommonEvents.setInputField(passwordInputField, password);
